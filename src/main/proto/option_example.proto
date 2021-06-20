@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package example.options;
+
+//specify what the java package will be
+option java_package = "com.example.options";
+
+//this option will crate multiple .java files for each message from the .proto file.
+//For example for this .proto file, it will create: OptionMessageTest.java and OptionMessageOther.java
+option java_multiple_files = true;
+
+message OptionMessageTest {
+  int32 id = 1;
+  bool is_simple = 2;
+  string name = 3;
+  repeated int32 sample_list = 4;
+}
+
+message OptionMessageOther{
+  int32 id = 1;
+  bool is_simple = 2;
+  string name = 3;
+  repeated int32 sample_list = 4;
+}
+
