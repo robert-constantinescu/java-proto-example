@@ -1,10 +1,8 @@
 package com.example;
 
-import example.simple.Simple;
 import example.simple.Simple.SimpleMessage;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.Arrays;
 
